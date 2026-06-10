@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f5f0ea;
+    font-family: "Inter", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.menu-page {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 40px 25px;
+    background-image: url("menu-img.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+}
+
+.menu-header {
+    margin-bottom: 30px;
+}
+
+.logo-text {
+    font-family: "Dancing Script", cursive;
+    font-size: 48px;
+    color: #2c2c2c;
+}
+
+.tagline {
+    font-size: 12px;
+    color: #6b6b6b;
+    margin-top: -5px;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.category {
+    margin-bottom: 25px;
+}
+
+.category-title {
+    background-color: #c0392b;
+    color: white;
+    padding: 8px 15px;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+}
+
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 4px 0;
+    font-size: 14px;
+    color: #2c2c2c;
+}
+
+.menu-item span:last-child {
+    font-weight: 600;
+    min-width: 35px;
+    text-align: right;
+}
+
+/* MOBILE - 480px tak (phones) */
+@media (max-width: 480px) {
+    .menu-page {
+        padding: 20px 15px;
+        max-width: 100%;
+    }
+
+    .logo-text {
+        font-size: 36px;
+    }
+
+    .menu-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .category-title {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+
+    .menu-item {
+        font-size: 13px;
+        padding: 3px 0;
+    }
+
+    .menu-item span:last-child {
+        min-width: 30px;
+    }
+}
+
+/* TABLET - 481px se 768px (tablets) */
+@media (min-width: 481px) and (max-width: 768px) {
+    .menu-page {
+        padding: 30px 20px;
+        max-width: 600px;
+    }
+
+    .logo-text {
+        font-size: 42px;
+    }
+
+    .menu-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    .category-title {
+        font-size: 13px;
+    }
+
+    .menu-item {
+        font-size: 13px;
+    }
+}
+
+/* LAPTOP - 769px se 1024px */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .menu-page {
+        max-width: 700px;
+        padding: 40px 30px;
+    }
+
+    .menu-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+
+    .menu-item {
+        font-size: 15px;
+        padding: 5px 0;
+    }
+
+    .category-title {
+        font-size: 15px;
+        padding: 10px 18px;
+    }
+}
+
+/* DESKTOP - 1025px+ (big screens) */
+@media (min-width: 1025px) {
+    .menu-page {
+        max-width: 800px;
+        padding: 50px 40px;
+    }
+
+    .logo-text {
+        font-size: 56px;
+    }
+
+    .menu-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+    }
+
+    .menu-item {
+        font-size: 16px;
+        padding: 6px 0;
+    }
+
+    .category-title {
+        font-size: 16px;
+        padding: 12px 20px;
+    }
+}
